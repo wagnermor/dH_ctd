@@ -2,7 +2,7 @@
   <img src="./img/imc-form.png">
 </p>
 
-<h1 align="center">Linguagem C</h1>
+<h1 align="center">HTML, CSS e JavaScript</h1>
 Praticando HTML, CSS e javaScript.
 
 ## Descrição
