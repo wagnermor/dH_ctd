@@ -1,0 +1,22 @@
+body {
+  background-color: rgb(223, 215, 185);
+  color: rgb(51, 51, 51);
+}
+
+h1 {
+  color: #0d1b97;
+}
+
+.job-title {
+  background-color: #1726ad;
+  color: #898dbe;
+}
+
+#high {
+  color: rgb(13, 27, 151);
+}
+
+footer ul {
+  background-color: #333;
+  color: rgb(223, 215, 185);
+}
