@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calcule seu IMC</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <script src="./js/index.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>calcule seu imc aqui</h1>
+      <p id="mesage">Olá fulano das quantas seu peso está normal ou saudável</p>
+    </header>
+    <main>
+      <form action="" method="get">
+        <label for="GET-name">Nome:</label>
+        <input type="text" name="name" id="GET-name" placeholder="Digite seu nome" required>
+        <label for="GET-weight">Peso:</label>
+        <input type="number" name="weight" id="GET-weight" placeholder="Digite seu peso em kg" required>
+        <label for="GET-height">Altura:</label>
+        <input type="number" name="height" id="GET-height" placeholder="Digite sua altura em m" required>
+        <input id="theButton" type="button" value="Calcular">
+        <input id="clearForm" type="button" value="Limpar">
+      </form>
+    </main>
+    <footer>
+      <p>
+        &copy; By Wagner Moreira <a href="https://github.com/wagnermor" target="_blanck">Github</a>
+      </p>
+    </footer>
+  </div>
+</body>
+</html>

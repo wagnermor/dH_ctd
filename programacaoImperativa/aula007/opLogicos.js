@@ -1,0 +1,20 @@
+console.log(`1.1) !true: ${!true}`);
+console.log(`1.2) !false: ${!false}`);
+console.log(`1.3) !!false: ${!!false}`);
+console.log(`1.4) !!true: ${!!true}`);
+console.log(`1.5) !1: ${!1}`);
+console.log(`1.6) !!1: ${!!1}`);
+console.log(`1.7) !0: ${!0}`);
+console.log(`1.8) !!0: ${!!0}`);
+console.log(`1.9) !!"": ${!!""}`);
+console.log("1.10) x = 5, y = 9");
+console.log(`1.10.a) x < 10 && x !== 5: ${5 < 10 && 5 !==5}`);
+console.log(`1.10.b) x > 9 || x === 5: ${5 > 9 || 5 === 5}`);
+console.log(`1.10.c) !(x === y): ${!(5 === 9)}`);
+console.log(`2.0) x = 10, y = "a"`);
+console.log(`2.1) y === "b" || x >= 10: ${"a" === "b" || 10 >= 10}`);
+console.log(`2.2) !(x == "3" || x === y) && !(y !== 8 && x <= y): ${!(10 == "3" || 10 === "a") && !("a" !== 8 && 10 <= "a")}`);
+console.log(`2.3) str = "", msg = "haha!", eBonito = "false"\n!((str || msg) && eBonito): ${!(("" || "haha!") && "false")}`);
+
+let secounds = new Date(). getSeconds();
+console.log(secounds);

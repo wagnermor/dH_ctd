@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family:Arial, Helvetica, sans-serif;
+  color:darkcyan;
+  box-sizing: border-box;
+
+}
+
+body {
+  background-image: url("../img/balance.jpg");
+  background-color: #fff;
+  height: 100vh;
+  background-repeat: no-repeat;
+}
+
+.container {
+  width: 60vw;
+  height: 100vh;
+  /* background-color: rgba(255, 255, 0, 0.2); */
+  padding: 3vh 0 0 0;
+  /* margin-left: 1vw; */
+}
+
+header {
+  margin: 0 auto;
+  text-align: center;
+  padding-bottom: 1vh;
+}
+
+header h1 {
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.8);
+  
+}
+main{
+  height: 500px;
+  width: 500px;
+  border: none;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.5);
+  margin: 0 auto;
+  position: relative;
+
+}
+
+main form {
+  position: absolute;
+  top: 30%;
+  left: 33%;
+}
+
+main form input{
+  display: block;
+  margin-bottom: 1em;
+  padding: 0.5em;
+  outline: none;
+  border: 0.5px solid darkcyan;
+}
+
+main form input[type="button"] {
+  display: inline;
+}
+
+footer {
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 3vh;
+}
+#mesage {
+  margin: 1vh 0;
+  display: none;
+}
+
+footer p {
+  text-shadow: 1px 1px 2px #fff;
+}
