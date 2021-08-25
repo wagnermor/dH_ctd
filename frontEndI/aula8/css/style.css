@@ -5,10 +5,13 @@
   color: #000;
   text-decoration: none;
   font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
 }
 
 body {
   background-color: #131313;
+  height: 100vh;
+  /* padding-bottom: 50px; */
 }
 
 body h1 {
@@ -30,6 +33,7 @@ body p {
 
 body a {
   color:yellow;
+  padding-bottom: 16px;
 }
 
 .media-picture {
