@@ -15,3 +15,6 @@ console.log(`2.0) x = 10, y = "a"`);
 console.log(`2.1) y === "b" || x >= 10: ${"a" === "b" || 10 >= 10}`);
 console.log(`2.2) !(x == "3" || x === y) && !(y !== 8 && x <= y): ${!(10 == "3" || 10 === "a") && !("a" !== 8 && 10 <= "a")}`);
 console.log(`2.3) str = "", msg = "haha!", eBonito = "false"\n!((str || msg) && eBonito): ${!(("" || "haha!") && "false")}`);
+
+let secounds = new Date(). getSeconds();
+console.log(secounds);
