@@ -2,19 +2,27 @@
   <img src="./img/printscreenAula8.png" width="50%">
 </p>
 
-<h1 align="center">HTML, CSS e JavaScript</h1>
-Praticando HTML, CSS e javaScript.
+<h1 align="center">HTML e CSS</h1>
+Propriedades do CSS.
 
 ## Descrição
 
-Exercício de programação imperativa aula 7.
+Exercício de HTML e CSS: frontEndI aula 8
 
 ## Entregas
 
-* [X] Index.html;
-* [X] Formulário;
-* [X] Estilo;
-* [X] Script;
+
+* [x] Cor de fundo da tag body em modo hexadecimal no valor #131313;
+* [x] Cor do texto da tag h1 em #fff;
+* [x] Fonte do texto para Roboto;
+* [x] Largura da classe media-picture em 100%;
+* [x] Altura da classe media-picture em 400px;
+* [x] Cor do texto da classe review-score #fff;
+* [x] Cor do fundo da classe review-score #e6bd09;
+* [x] Padding na classe review-score com valor de 12px;
+* [x] Cor de texto da tag h2 em cor predefinida de nome ‘steelblue’;
+* [x] Cor do texto da tag p #bdbdbd;
+* [x] Cor de texto da tag a em cor predefinida de nome ‘yellow’;
 
 ## Como utilizar
 
@@ -29,9 +37,9 @@ Caso precise de ajuda para clonar o repositório, clique [aqui](https://docs.git
 
 ### Abra o código
 
-* No diretório clonado, vá até o diretório programação imperativa >> aula7 >> imc
+* No diretório clonado, vá até o diretório frontEndI >> aula8
 * Edite o código e salve as alterações.
 
 ### Executando o programa
 
-* Abra a pasta do projeto (imc) no vscode ou editor de sua escolha e ative a extensão live server ou semelhantes:
+* Abra a pasta do projeto (aula8) no vscode ou editor de sua escolha e ative a extensão live server ou semelhantes:
