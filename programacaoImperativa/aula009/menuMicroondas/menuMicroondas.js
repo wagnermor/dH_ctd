@@ -6,7 +6,7 @@ function Microondas(opcao = 0, tempo = 0) {
   const pronto = `Prato pronto, bom apetite!!!`;
   const queimou = `À comida queimou.`;
   const insuficiente = `Tempo insuficiente.`;
-  const bum = `kabumm!!!`
+  const bum = `kabumm!!!`;
   const menuError = `Prato inexistente`;
 
   if(opcao === 1 && tempo === 0) 
