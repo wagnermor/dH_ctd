@@ -1,0 +1,33 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+body {
+  height: 150vh;
+}
+
+.filho {
+  padding: 50px;;
+  border: 1px solid #00f;
+  width: 200px;
+  position: absolute;
+}
+
+.filho:nth-child(2) {
+  background-color: #f00;
+  bottom: 0;
+  left: 40%;
+  position: fixed;
+}
+.filho:nth-child(3) {
+  background-color: #f00;
+  right: 0;
+}
+
+.neto {
+  width: 100px;
+  height: 100px;
+  border: 1px solid #00f;
+  text-align: center;
+  padding-top: 40px;
+}
