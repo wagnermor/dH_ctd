@@ -1,51 +1,106 @@
-@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Sarabun:ital,wght@0,600;1,400&display=swap');
+/* font-family: 'Acme', sans-serif;
+font-family: 'Sarabun', sans-serif; */
 * {
   margin: 0;
   padding: 0;
   text-decoration: none;
-  list-style: none;
   color: #000;
   font-family: sans-serif;
   box-sizing: border-box;
+  color: #fff;
+  font-family: 'Sarabun', sans-serif;
+  font-weight: regular;
+}
+ul, ol {
+  list-style: none;
 }
 
-header{
-  background-color: #999;
-  /* background-image: linear-gradient(to right, red, blue); */
-
-  width: 100vw;
-  height: 10vh;
-  position: fixed;
-  text-align: center;
+body {
+  background-color: #ddd;
 }
 
-header nav {
-  padding-top: 4vh;
-}
-
-header nav ul li {
-  display: inline;
-  padding: 2vh 5vw;
-  text-transform: uppercase;
-}
-
-/* header nav ul li:nth-child(1+n){
-  padding-left: 5vw;
-} */
-
-.box {
-  padding-top: 10vh;
-  border: solid 1px salmon;
-  width: 80vw;
-  height: 70vh;
-  margin: 0 auto;
-  text-align: center;
-}
-
-.minha-cidade {
-  padding: 30px;
-  background-image: url("../img/oz_cit.jpg");
-  height: 100%;
-  background-size: cover;
+.wrapper {
+  background-image: url('../img/oz.jpg');
   background-repeat: no-repeat;
+  background-attachment: fixed;
+  width: 80vw;
+  height: 100vh;
+  margin: 0 auto;
+}
+
+header {
+  text-align: center;
+  padding: 20px 0;
+}
+
+header h1 {
+  font-family: 'Acme', sans-serif;
+  font-size: 3.5rem;
+  letter-spacing: 0.5rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+main {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+main p {
+  margin: 10px 0 ;
+}
+
+.video {
+  /* margin-bottom: 20px; */
+  position: relative;
+  left: -90px;
+}
+
+.video  iframe {
+  width: 1280px;
+  height: 720px;
+}
+
+.curio {
+  background-color: rgba(0, 0, 0, 0.5);
+  text-align: center;
+  height: 200px;
+  padding: 30px;
+}
+
+.curio h2 {
+  text-decoration: underline;
+  margin-bottom: 20px;
+}
+
+.curio ol {
+  list-style: upper-roman;
+  width: 50%;
+  text-align:left ;
+  margin: 0 auto;
+}
+
+#by {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #000;
+  height: 100px;
+  margin-bottom: 20px;
+  text-align: center;
+  padding: 30px;
+}
+.icons {
+  position: fixed;
+  right: .5vw;
+  top: 1vh;
+  display: inline-block;
+  width: 60px;
+  background-color: #fff;
+  text-align: center;
+  border-radius: 8px;
+}
+
+.icons a:nth-child(1) img {  
+  width: 80%;
 }
