@@ -25,7 +25,7 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   width: 80vw;
-  height: 100vh;
+  /* height: 100vh; */
   margin: 0 auto;
 }
 
@@ -66,8 +66,9 @@ main p {
 .curio {
   background-color: rgba(0, 0, 0, 0.5);
   text-align: center;
-  height: 200px;
+  /* height: 200px; */
   padding: 30px;
+  margin: 20px 0;
 }
 
 .curio h2 {
@@ -84,11 +85,9 @@ main p {
 
 #by {
   background-color: rgba(0, 0, 0, 0.5);
-  color: #000;
-  height: 100px;
   margin-bottom: 20px;
   text-align: center;
-  padding: 30px;
+  padding: 10px;
 }
 .icons {
   position: fixed;
@@ -99,8 +98,14 @@ main p {
   background-color: #fff;
   text-align: center;
   border-radius: 8px;
+  padding: .5vh 0;
 }
 
-.icons a:nth-child(1) img {  
-  width: 80%;
+.icons a i:hover{  
+  color: rgb(220, 0, 0);
+}
+
+.fa-instagram-square, .fa-youtube {
+  color: #888;
+  font-size: 2rem;
 }
