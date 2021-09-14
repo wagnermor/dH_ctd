@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+header, main section {
+  margin: 0 auto;
+  text-align: center;
+}
+header {
+  width: 100vw;
+  height: 10vh;
+  background-color: dodgerblue;
+  padding: 3vh 0;
+  margin-bottom: 5vh;
+  position: fixed;
+  margin: 0 auto;
+}
+
+header ul li, main section h2 {
+  display: inline-block;
+  text-transform: uppercase;
+}
+header ul li {
+  padding: 0 2vw;
+}
+header ul li a:hover {
+  padding-bottom: .5vh;
+  border-bottom: solid 1px #fff;
+}
+
+header ul li a {
+  color: #fff;
+}
+
+main section {
+  width: 80vw;
+  height: 80vh;
+  text-align: justify;
+  padding: 13vh 3vw;
+}
+
+main section p::first-letter {
+  font-size: 2rem;
+}
+
+main section:first-child {
+  background-color: darkseagreen;
+}
+main section:nth-child(2) {
+  background-color: greenyellow ;
+}
+main section:last-child {
+  background-color:cadetblue;
+}
+
+main section form input[type="text"]:focus {
+  background-color: dodgerblue;
+  border: solid 3px coral;
+  outline: none;
+}
+main section form h4 {
+  padding: 10px 0;
+}
+
+main section form input[type="checkbox"]:checked {
+  box-shadow: 0 0 0 3px deeppink;
+}
+input:disabled {
+  background-color: darkgoldenrod;
+  color: darkorange;
+}
+footer {
+  width: 99.99vw;
+  height: 20vh;
+  background-color: dodgerblue;
+  color: #fff;
+  text-align: center;
+  padding: 10vh 0;
+}
+footer p strong::before {
+  content: "2021 ";
+}
+footer p strong::after {
+  content: " 2022";
+}
