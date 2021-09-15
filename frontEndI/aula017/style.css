@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body, ul, ol, a {
+  list-style: none;
+  text-decoration: none;
+}
+body {
+  color: #fff;
+  font-family: sans-serif;
+  background-color: #000;
+}
+
+header, footer {
+  position: fixed;
+  width: 100vw;
+  height: 10vh;
+  background-color: darkseagreen;
+  padding: 3vh;
+  text-align: center;
+}
+
+header ul li, section ul li {
+  display: inline-block;
+  padding: 1vh 2vw;
+  background-color: #fff;
+  transition: background-color 1s, border-radius .5s ;
+  font-weight: bold;
+}
+header ul li:hover, section ul li:hover {
+  background-color: darkorchid;
+  border-radius: 8px;
+}
+
+header ul li a, section ul li a {
+  color: #000;
+  text-transform: uppercase;
+  transition: color .5s;
+}
+
+header ul li:hover a, section ul li:hover a {
+  color: #fff;
+}
+
+header ul li:nth-child(2), section ul li:nth-child(2) {
+  margin: 0 3vw;
+}
+
+header ul li:first-child a:active {
+  background-color: red;
+}
+
+main section {
+  padding: 15vh 0 5vh ;
+  background-color: #fff;
+  color: #000;
+}
+
+main section:first-child img{
+  position: relative;
+  width: 5rem;
+}
+
+main section:first-child:hover img {
+  animation: startBall 3s infinite;
+}
+
+main section:nth-child(2) {
+  text-align: center;
+  font-size: 5rem;
+}
+
+main section:nth-child(2):hover p {
+  animation: startIcon 5s infinite;
+}
+
+main section:nth-child(3) {
+  text-align: center;
+  background-color: darkseagreen;
+}
+
+footer {
+  bottom: 0;
+}
+
+@keyframes startBall {
+  from {
+    left: 0;
+    opacity: 0;
+  }
+  to {
+    left: 100%;
+    opacity: 1;
+  }
+}
+
+@keyframes startIcon {
+  0% {}
+  25%{transform: skew(10deg, 10deg)}
+  50%{transform: skew(20deg, 20deg)}
+  75%{transform: skew(40deg, 40deg)}
+  100%{transform: skew(80deg, 80deg)}
+}
