@@ -1,9 +1,10 @@
 <p align="center">
-  <img src="./img/screeShotPc.png" width="50%">
+  <img src="./img/full.png" width="560%">
 </p>
-<p align="center">
-  <img src="./img/screeShotMobile.png" width="50%">
-</p>
+<section align="center">
+  <img src="./img/mobile.png" width="30%">
+  
+</section>
 
 <h1 align="center">HTML e CSS</h1>
 Flex box
