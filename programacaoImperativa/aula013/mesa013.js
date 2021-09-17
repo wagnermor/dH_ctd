@@ -39,7 +39,7 @@ let banco = {
   },
 };
 
-
+console.log(banco.clientes);
 // console.log(JSON.stringify(listaContas));
 console.table(listaContas);
 console.log(jobi.saldo);
