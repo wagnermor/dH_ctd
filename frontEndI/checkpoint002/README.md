@@ -31,7 +31,7 @@ Você provavelmente fez o checkpoint I, então imaginamos este trabalho como uma
 ## Como utilizar
 
 ### link do projeto:
-https://wagnermor.github.io/dH_ctd/frontEndI/checkpoint002
+https://wagnermor.github.io/dH_ctd/frontEndI/checkpoint002/
 ### Clone o repositório
 
 * Clone este repositório:
