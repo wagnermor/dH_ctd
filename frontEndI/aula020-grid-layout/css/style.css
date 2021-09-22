@@ -31,15 +31,17 @@ body header {
   justify-content: center;
   align-items: center;
   padding: 1rem 0;
+  height: 20vh;
 }
 body header img {
-  width: 10%;
+  width: 5%;
 }
 
 body aside {
   background-color: #d700ff;
   grid-area: aside;
   font-weight: bold;
+  height: 70vh;
   /* padding: 1rem; */
   /* display: flex;
   flex-direction: column;
@@ -89,5 +91,5 @@ body footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 12vh;
+  height: 10vh;
 }
