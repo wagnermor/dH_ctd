@@ -1,0 +1,36 @@
+@media only screen and (max-width: 600px) {
+  
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    color: red;
+  }
+
+  body header {
+    /* height: 20vh; */
+  }
+
+  body header img{
+    /* width: 24%; */
+  }
+
+  body aside {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 10vh;
+  }
+body aside ul li {
+  display: inline-block;
+}
+
+body footer {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+}
