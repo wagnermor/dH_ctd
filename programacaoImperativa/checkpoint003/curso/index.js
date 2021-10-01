@@ -1,35 +1,32 @@
-const Aluno = require("../aluno");
-const listaDeAlunos = require("../app");
+const NovoAluno = require("../aluno");
 
 const curso = {
   nomeDoCurso: "CTD",
   notaDeAprovacao: 5,
-  faltasMaximas: 7,
-  listaDeEstudantes: listaDeAlunos,
-  adicionaAluno:function (nome, faltas, notas){
-    thislistaDeEstudantes.push(new Aluno.NovoAluno(nome, faltas, notas));
+  faltasmaximas: 10,
+  lista:[],
+  addAlunos: function(nome, faltas, notas) {
+    this.lista.push((new NovoAluno(nome, faltas, notas)));
   },
-  aprovacao: function (aluno) {
-    const mediaIgualOuMaior = aluno.calcularMedia() >= this.notaDeAprovacao && aluno.faltas < this.faltasMaxima;
-    const mesmaFalta = aluno.calcularMedia() > this.notaDeAprovacao * 1.1 && aluno.faltas ===this.faltasMaximas;
-    if (mediaIgualOuMaior) {
+  aprovou: function(aluno) {
+    const notaMaxima = this.notaDeAprovacao <= aluno.calcularMedia() && this.faltasmaximas > aluno.numeroDeFaltas;
+    const faltasMaximas = (this.faltasmaximas === aluno.numeroDeFaltas) && ((this.notaDeAprovacao * 1.1) < aluno.calcularMedia());
+    if (notaMaxima) {
       return true;
-    } else if (mesmaFalta) {
+    } else if(faltasMaximas) {
       return true;
     } else {
       return false;
     }
   },
-  retornaResultados: function () {
-    let listaDeResultado = [];
-    for (estudante of this.listaDeEstudantes) {
-      listaDeResultado.push(this.aprovacao(estudante));
+  retornaResultado: function() {
+    const listaDeResultado = [];
+    for (let estudante of this.lista) {
+      listaDeResultado.push(this.aprovou(estudante));
     }
     return listaDeResultado;
   }
-};
+}
 
-const resultado = curso.retornaResultados();
-console.log(resultado);
-
+// console.log(curso.lista);
 module.exports = curso;

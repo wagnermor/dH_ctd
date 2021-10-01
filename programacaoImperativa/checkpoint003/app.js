@@ -1,16 +1,22 @@
-const aluno = require("./aluno");
+const NovoAluno = require('./aluno');
+const curso = require("./curso");
+const dados = require('./dados');
 
-// const wagner = new aluno('Wagner', 1, 10);
-const aluno001 = new aluno.NovoAluno('Robert', 8, [9, 10, 8, 9]);
-const aluno002 = new aluno.NovoAluno('George', 3, [8, 10, 8, 9]);
-const aluno003 = new aluno.NovoAluno('Keny', 5, [7, 7, 8, 9]);
-const aluno004 = new aluno.NovoAluno('Thomas', 0, [7, 7, 7, 7]);
-const aluno005 = new aluno.NovoAluno('Nicole', 2, [8, 10, 8, 9]);
-const aluno006 = new aluno.NovoAluno('Isaac', 0, [8, 10, 8, 9]);
-const aluno007 = new aluno.NovoAluno('Richard', 1, [8, 10, 8, 9]);
-const aluno008 = new aluno.NovoAluno('Wagner', 0, [8, 10, 8, 9]);
+for (let i = 0; i < 5; i ++) {
+  let geraEstudante = new NovoAluno(dados.fullName(), dados.faltas(), dados.notas());
+  curso.lista.push(geraEstudante);
+}
 
-const listaDeAlunos = [aluno001, aluno002, aluno003, aluno004, aluno005, aluno006, aluno007, aluno008];
-console.log(listaDeAlunos);
-module.exports = listaDeAlunos;
+curso.addAlunos("Covidelson",2,[5,5,5,5]);
+curso.addAlunos("Covidelson Júnior",8,[5.5,5.5,5.5,5.5]);
 
+const covidelson = curso.aprovou(curso.lista[curso.lista.length - 2]);
+const covidelsonJr = curso.aprovou(curso.lista[curso.lista.length - 1]);
+
+console.log(curso.lista);
+console.log(curso.lista[6]);
+curso.lista[6].faltas();
+console.log(curso.lista[6]);
+// console.log(covidelsonJr);
+console.log(curso.retornaResultado());
+console.log(curso.lista[0].calcularMedia(), curso.lista[1].calcularMedia(),curso.lista[2].calcularMedia(), curso.lista[3].calcularMedia(),curso.lista[4].calcularMedia(), curso.lista[5].calcularMedia(), curso.lista[6].calcularMedia());
