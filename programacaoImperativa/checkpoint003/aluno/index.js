@@ -7,10 +7,6 @@ module.exports = function Aluno(nome, faltas = 0, notas) {
     return media / this.notas.length;
   },
   this.faltas = function() {
-    this.numeroDeFaltas++;
+    this.numeroDeFaltas += 1;
   }
 }
-
-// module.exports = {
-//   NovoAluno: Aluno,
-// }
