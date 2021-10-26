@@ -8,7 +8,7 @@ for (let i = 0; i < 5; i ++) {
 }
 
 curso.addAlunos("Covidelson",2,[5,5,5,5]);
-curso.addAlunos("Covidelson Júnior",9,[5.5,5.5,5.5,5.5]);
+curso.addAlunos("Covidelson Júnior",9 ,[5.5,5.5,5.5,5.5]);
 
 const covidelson = curso.aprovou(curso.lista[curso.lista.length - 2]);
 const covidelsonJr = curso.aprovou(curso.lista[curso.lista.length - 1]);
